@@ -317,9 +317,9 @@ EditorThemeManager::ThemeConfiguration EditorThemeManager::_create_theme_config(
 				preset_contrast = 0.0;
 				preset_draw_extra_borders = true;
 			} else { // Default
-				preset_accent_color = Color(0.44, 0.73, 0.98);
-				preset_base_color = Color(0.21, 0.24, 0.29);
-				preset_contrast = config.default_contrast;
+    			preset_accent_color = Color(0.32, 0.82, 0.4); // Зеленый акцент вместо синего
+    			preset_base_color = Color(0.21, 0.24, 0.29);  // Оставляем базовый цвет
+    			preset_contrast = config.default_contrast;
 			}
 
 			config.accent_color = preset_accent_color;

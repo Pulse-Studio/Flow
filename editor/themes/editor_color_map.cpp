@@ -46,7 +46,7 @@ void EditorColorMap::create() {
 	// This can be a basis for proper palette validation later.
 
 	// Convert:               FROM       TO
-	add_conversion_color_pair("#478cbf", "#478cbf"); // Godot Blue
+	add_conversion_color_pair("#478cbf", "#52D164"); // Godot Blue -> Godot Green
 	add_conversion_color_pair("#414042", "#414042"); // Godot Gray
 
 	add_conversion_color_pair("#ffffff", "#414141"); // Pure white
@@ -63,7 +63,8 @@ void EditorColorMap::create() {
 	add_conversion_color_pair("#e0e0e0", "#5a5a5a"); // Common icon color
 	add_conversion_color_pair("#808080", "#808080"); // GUI disabled color
 	add_conversion_color_pair("#b3b3b3", "#363636"); // GUI disabled light color
-	add_conversion_color_pair("#699ce8", "#699ce8"); // GUI highlight color
+	// GUI Colors (адаптируем под зеленую тему)
+	add_conversion_color_pair("#699ce8", "#52D164"); // GUI highlight color
 	add_conversion_color_pair("#f9f9f9", "#606060"); // Scrollbar grabber highlight color
 
 	add_conversion_color_pair("#c38ef1", "#a85de9"); // Animation
@@ -74,8 +75,8 @@ void EditorColorMap::create() {
 	add_conversion_color_pair("#8eef97", "#2fa139"); // GUI Control
 	add_conversion_color_pair("#76ad7b", "#64a66a"); // GUI Control Abstract
 
-	add_conversion_color_pair("#5fb2ff", "#0079f0"); // Selection (blue)
-	add_conversion_color_pair("#003e7a", "#2b74bb"); // Selection (darker blue)
+	add_conversion_color_pair("#5fb2ff", "#52D164"); // Selection (was blue)
+	add_conversion_color_pair("#003e7a", "#2D7A39"); // Selection (darker green)
 	add_conversion_color_pair("#f7f5cf", "#615f3a"); // Gizmo (yellow)
 
 	// Rainbow
